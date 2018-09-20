@@ -74,10 +74,6 @@ class ReactSlidin extends Component {
       }, speed); 
   }
 
-  // static propTypes = {
-  //   settings: PropTypes.object
-  // }
-
   render() {
     let settings = { ...defaultProps, ...this.props };
      
@@ -90,9 +86,9 @@ class ReactSlidin extends Component {
     let activeIndex = this.state.sliderIndex
 
     return(
-        <div className="sliderComponent" >
+        <div className={styles.sliderComponent} >
             React slidin
-            <div className="sliderWrapper">
+            <div className={styles.sliderWrapper}>
             {
                 sliderComponent.map((element, index) => {
                     return (
@@ -104,7 +100,7 @@ class ReactSlidin extends Component {
             }
 
             {settings.arrows &&
-                <div className="arrows" >
+                <div className={styles.arrows}>
                     <PrevArrow  onClick={this.handlePrevClicked} />
                     <NextArrow  onClick={this.handleNextClicked} />
                 </div>

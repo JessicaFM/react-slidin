@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-
-
-
+import styles from '../styles.css'
 
 class PrevArrow extends Component {
     constructor(props) {
@@ -25,7 +23,7 @@ class PrevArrow extends Component {
         }
 
         return(
-            <div className="prevArrow">
+            <div className={styles.prevArrow}>
                 <button className="arrow right" style={buttonStyles}
                 onClick={this.handlePrevClicked}>
                     <svg width="60px" height="80px" 

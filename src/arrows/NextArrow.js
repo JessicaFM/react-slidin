@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import styles from '../styles.css'
 
 class NextArrow extends Component {
     constructor(props) {
@@ -24,7 +24,7 @@ class NextArrow extends Component {
         }
 
         return(
-            <div className="nextArrow">
+            <div className={styles.nextArrow}>
                 <button className="arrow left"  style={buttonStyles}
                 onClick={this.handleNextClicked}>
                     <svg xmlns="http://www.w3.org/2000/svg" 

@@ -13,11 +13,11 @@ class ImageCarousel extends Component {
         let activeSlider, classActive="";
         if(this.props.activeIndex === this.props.index) {
             activeSlider = true;
-            classActive = "active"
+            classActive = "active " + styles.active;
         }
         
         return(
-            <div className={'sliderImage '  + classActive}>
+            <div className={styles.sliderImage + " "  + classActive}>
                 {(activeSlider) &&
                     <img src={imageSrc} />
                 }
