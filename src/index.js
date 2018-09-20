@@ -85,8 +85,12 @@ class ReactSlidin extends Component {
     let sliderComponent = this.state.currentSliders;
     let activeIndex = this.state.sliderIndex
 
+    let componentHeight = settings.height
+
+    console.log(styles.sliderComponent)
+
     return(
-        <div className={styles.sliderComponent} >
+        <div className={styles.sliderComponent}>
             <div className={styles.sliderWrapper}>
             {
                 sliderComponent.map((element, index) => {

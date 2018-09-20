@@ -9,8 +9,8 @@ body {
 .sliderComponent {
   margin-right: auto;
   margin-left: auto;
-  width: 750px;
-  height: 300px;
+  width: 100%;
+  min-height: 350px;
   position: relative;
 }
 
