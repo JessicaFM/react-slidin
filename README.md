@@ -15,12 +15,36 @@ npm install --save react-slidin
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-slidin'
+import ReactSlidin from 'react-slidin'
 
 class Example extends Component {
   render () {
+
+    var settings = {
+      arrows: true,
+      autoPlay: true,
+      dots: true,
+      infinite: true,
+      speed: 5000, //ms-> 1000ms=1s
+      slidesToShow: 4,
+      slidesToScroll: 4,
+    };
+    
     return (
-      <MyComponent />
+      <ReactSlidin {...settings}>
+        <div className="">
+          <img src="/assets/img/img1.jpg" />
+        </div>
+        <div className="">
+          <img src="/assets/img/img2.jpg" />
+        </div>
+        <div className="">
+          <img src="/assets/img/img3.jpg" />
+        </div>
+        <div className="">
+          <img src="/assets/img/img4.jpg" /> 
+        </div>
+      </ReactSlidin>
     )
   }
 }

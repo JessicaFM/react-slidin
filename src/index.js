@@ -87,7 +87,6 @@ class ReactSlidin extends Component {
 
     return(
         <div className={styles.sliderComponent} >
-            React slidin
             <div className={styles.sliderWrapper}>
             {
                 sliderComponent.map((element, index) => {
